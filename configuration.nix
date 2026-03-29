@@ -13,6 +13,11 @@
   # タイムゾーン
   time.timeZone = "Asia/Tokyo";
 
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
+
   # ユーザー設定
   users.users.nazozo = {
     isNormalUser = true;
